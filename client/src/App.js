@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React with k8s
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
@@ -32,3 +32,4 @@ function App() {
 }
 
 export default App;
+
