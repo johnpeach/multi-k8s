@@ -2,12 +2,12 @@ docker build -t johnppeach/multi-client:latest -t johnppeach/multi-client:$SHA -
 docker build -t johnppeach/multi-server:latest -t johnppeach/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t johnppeach/multi-worker:latest -t johnppeach/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
-docker push johnppeach/multi-client:lastest
+docker push johnppeach/multi-client:latest
 docker push johnppeach/multi-client:$SHA
 docker push johnppeach/multi-server:latest
 docker push johnppeach/multi-server:$SHA
 docker push johnppeach/multi-worker:latest
-docker push johnppeach/multi-server:$SHA
+docker push johnppeach/multi-worker:$SHA
 
 kubectl apply -f k8s
 
